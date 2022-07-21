@@ -80,8 +80,7 @@ public:
         Polynom<Type, N> result;
         const size_t denominator_degree = denominator.get_degree();
 
-        if (numerator.get_degree() < denominator.get_degree() or numerator.get_degree() == 0 or
-            denominator.get_degree() == 0) {
+        if (numerator.get_degree() < denominator.get_degree()) {
             return numerator;
         }
 
@@ -255,8 +254,7 @@ public:
         Polynom<Type, Modified> result;
         const size_t denominator_degree = denominator.get_degree();
 
-        if (numerator.get_degree() < denominator_degree or numerator.get_degree() == 0 or
-            denominator_degree == 0) {
+        if (numerator.get_degree() < denominator_degree) {
             return numerator;
         }
 
