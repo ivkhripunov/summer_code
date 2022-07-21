@@ -1,0 +1,3 @@
+/home/ivankhripunov/CLionProjects/summer_code/cmake-build-debug/CMakeFiles/summer_week_01.dir
+/home/ivankhripunov/CLionProjects/summer_code/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ivankhripunov/CLionProjects/summer_code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
