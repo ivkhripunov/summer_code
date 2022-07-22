@@ -10,6 +10,8 @@ int main() {
     Vector<double, 3> v3 = 2 * v1 / 3 + 7 * v4 - v2;
     std::cout << v3;
     std::cout << (v1 == v2) << " " << (v1 == v3) << std::endl;
+    Vector<double, 4> v5 = {1, 2, 3};
+    std::cout << v5;
 
     Vector<double, -1> v0_dynamic;
     Vector<double, -1> v1_dynamic = {1.25, 3, 2.7};

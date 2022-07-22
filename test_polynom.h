@@ -26,7 +26,7 @@ public:
     }
 
     constexpr Polynom(std::initializer_list<Type> initializer) {
-        for (auto i = 0; i < N; ++i) data_[i] = *(initializer.begin() + i);
+        for (auto i = 0; i < initializer.size(); ++i) data_[i] = *(initializer.begin() + i);
     }
 
     [[nodiscard]] unsigned int get_degree() const {

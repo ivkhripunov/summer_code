@@ -23,7 +23,7 @@ public:
     }
 
     constexpr Vector(std::initializer_list<Type> initializer) {
-        for (auto i = 0; i < N; ++i) data_[i] = *(initializer.begin() + i);
+        for (auto i = 0; i < initializer.size(); ++i) data_[i] = *(initializer.begin() + i);
     }
 
     const Type &operator[](unsigned int i) const {
@@ -142,7 +142,7 @@ public:
 
     constexpr Vector(std::initializer_list<Type> initializer) {
         data_.resize(initializer.size());
-        for (auto i = 0; i < data_.size(); ++i) data_[i] = *(initializer.begin() + i);
+        for (auto i = 0; i < initializer.size(); ++i) data_[i] = *(initializer.begin() + i);
     }
 
     const Type &operator[](unsigned int i) const {
