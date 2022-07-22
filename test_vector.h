@@ -233,7 +233,7 @@ public:
         return data_ != other.data_;
     }
 
-    Vector<Type, Dynamic>& operator=(const Vector<Type, Dynamic>& vec) {
+    Vector<Type, Dynamic> &operator=(const Vector<Type, Dynamic> &vec) {
         data_ = vec.get_data();
 
         return *this;

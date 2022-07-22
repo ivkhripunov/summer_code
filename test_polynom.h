@@ -11,7 +11,7 @@ class Polynom : public Vector<Type, N> {
 
 private:
 
-    using Vector<Type, N>::data_;
+    using Vector<Type, N>::data_; //номер элемента соответствует степени
 
 public:
 
@@ -107,7 +107,7 @@ class Polynom<Type, Modified> {
 
 private:
 
-    std::map<unsigned, Type> data_;
+    std::map<unsigned, Type> data_; //пары степень - коэффициент
 
 public:
 
